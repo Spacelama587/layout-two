@@ -279,7 +279,7 @@ body {
   transition: transform 0.3s ease, font-weight 0.3s ease; 
 }
 
-.grid-two-card-oneo:hover {
+.grid-two-card-one:hover {
   background-color: #f3f4f6;
   color: black;
 }
@@ -325,8 +325,8 @@ body {
 }
 
 .grid-two-card-two:hover {
-  background-color: #f3f4f6;
-  color: black;
+  background-color: black;
+  color: #f3f4f6;
 }
 
 .grid-two-card-two:hover p{
