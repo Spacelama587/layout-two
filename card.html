@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card Layout</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-header {
+      background-color: #333;
+      color: #fff;
+      padding: 16px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .card-content {
+      padding: 16px;
+      flex-grow: 1;
+    }
+
+    .card-icon {
+      width: 48px;
+      height: 48px;
+      background-color: #333;
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      mask-position: center;
+      margin-bottom: 16px;
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .card-description {
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-header">Microsoft 365</div>
+      <div class="card-content">
+        <div class="card-icon" style="mask-image: url('/api/placeholder/48/48');"></div>
+        <div class="card-title">Maximale Produktivität und effiziente Zusammenarbeit im gesamten Team mit Microsoft 365 in der Cloud.</div>
+        <div class="card-description">Maximale Produktivität und effiziente Zusammenarbeit im gesamten Team mit Microsoft 365 in der Cloud.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Mobile Device Management</div>
+      <div class="card-content">
+        <div class="card-icon" style="mask-image: url('/api/placeholder/48/48');"></div>
+        <div class="card-title">Berechtigungen und Geräte zentral verwalten mit innovativen Mobile Device Management Lösungen.</div>
+        <div class="card-description">Berechtigungen und Geräte zentral verwalten mit innovativen Mobile Device Management Lösungen.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Cloud Telefonie</div>
+      <div class="card-content">
+        <div class="card-icon" style="mask-image: url('/api/placeholder/48/48');"></div>
+        <div class="card-title">Ob im Homeoffice, unterwegs oder im Büro - überall erreichbar unter der gleichen Rufnummer mit einer Cloud Telefonanlage.</div>
+        <div class="card-description">Ob im Homeoffice, unterwegs oder im Büro - überall erreichbar unter der gleichen Rufnummer mit einer Cloud Telefonanlage.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Dokumentenmanagement</div>
+      <div class="card-content">
+        <div class="card-icon" style="mask-image: url('/api/placeholder/48/48');"></div>
+        <div class="card-title">Dokumente, Verträge und Projektstände zentral managen mit devolo für Microsoft 365. Datenaustausch über den Microsoft SharePoint.</div>
+        <div class="card-description">Dokumente, Verträge und Projektstände zentral managen mit devolo für Microsoft 365. Datenaustausch über den Microsoft SharePoint.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
